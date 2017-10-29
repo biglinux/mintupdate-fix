@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=mintupdate-fix
+mkdir -p "/usr/share/dpkgdivert/mintupdate-fix"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/mintupdate-fix/etcxdgautostartmintupdate.desktop" --rename "/etc/xdg/autostart/mintupdate.desktop"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/etc/xdg/autostart/mintupdate.desktop")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/mintupdate-fix/etcxdgautostartmintupdate.desktop" --rename "/etc/xdg/autostart/mintupdate.desktop"
+fi
+;;
+esac
+exit 0

@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+package_name=mintupdate-fix
+case "$1" in
+  remove)
+    dpkg-divert --package "$package_name" --rename --remove "/etc/xdg/autostart/mintupdate.desktop"
+    ;;
+  purge)
+    dpkg-divert --package "$package_name" --rename --remove "/etc/xdg/autostart/mintupdate.desktop"
+;;
+esac
+exit 0

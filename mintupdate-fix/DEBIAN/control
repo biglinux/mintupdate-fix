@@ -1,0 +1,11 @@
+Package: mintupdate-fix
+Version: 1.0.0-1big3
+Depends: mintupdate
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Installed-Size:168
+Description: autostart mintupdate just in cinnamon desktop
+
+

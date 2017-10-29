@@ -1,0 +1,7 @@
+f51606ba615d0991f0fa1eb64908e3ac  DEBIAN/control
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+72333f3e9539dd5d3aab6ef82eaa278b  DEBIAN/dpkg-divert
+fb92183cc3c5df28918fe0ffe0f1344b  DEBIAN/postrm
+2a4880d88addc47e4b4b462b19315ed8  DEBIAN/preinst
+82a7c07754b372122b8b59e5ead65003  usr/lib/linuxmint/mintUpdate/mintUpdate.py
+9934c00b4b44657e669cd4185599171e  etc/xdg/autostart/cinnamon-settings-daemon-a11y-settings.desktop
